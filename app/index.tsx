@@ -1,5 +1,5 @@
 import { Text, View, StyleSheet, Button } from "react-native";
-import Quote from "@/components/Quote";
+import Quote from "@/components/ImageDog";
 import { useState } from "react";
 export default function Index() {
 	const [next, setNext] = useState<boolean>(false);
@@ -12,10 +12,10 @@ export default function Index() {
 				alignItems: "center",
 			}}
 		>
-			<Text style={styles.h1}>Random Chuck Norris Quote:</Text>
+			<Text style={styles.h1}>Get random image:</Text>
 			<Quote next={next} />
 			<Button
-				title="Next Quote"
+				title="Next Dog"
 				onPress={() => {
 					setNext(!next);
 				}}
